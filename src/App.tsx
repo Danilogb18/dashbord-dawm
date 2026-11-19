@@ -1,6 +1,6 @@
 import './App.css';
 import { Grid } from '@mui/material';
-import HeaderUI from './components/HeaderUI'
+import HeaderUI from './components/HeaderUI';
 import AlertUI from './components/AlertUI';
 
 function App() {
@@ -12,10 +12,12 @@ function App() {
                 <HeaderUI />
             </Grid>
 
-             {/* Alertas */}
-            <Grid size={{ xs: 12, md: 12 }} container sx={{ justifyContent: 'flex-end', alignItems: 'center' }}>
+            {/* Alertas */}
+            <Grid size={{ xs: 12, md: 12 }}
+                container sx={{ justifyContent: 'flex-end', alignItems: 'center' }}>
 
                 <AlertUI description="No se prevén lluvias" />
+                <AlertUI description="Índice UV alto" severity="warning" variant="filled" />
 
             </Grid>
 
